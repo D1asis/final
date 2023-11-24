@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online-school Mavico</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="zxc.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+
+</head>
+<body class="black-bg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="#">Mavico</a>
+        <button class="navbar-toggler" type="button" data-toggle="" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="zxc.html">Main <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="zxc2.html">About company</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zxc3.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zxc5.html">For graduates</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zxc4.html">Subscription</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zxc6.html">Media</a>
+            </li>
+          </ul>
+        </div>
+    </nav>    
+    <header class="hero bg-danger text-left py-5">
+        <div class="container">
+          <h1 class="display-4" style="text-align: left;">Welcome to <strong>Mavico</strong></h1>
+          <p3 class="lead" style="text-align: left;"><i>Your path to learning programming and IT starts here</i></p3>
+        </div>
+      </header>
+      
+
+      <section id="courses" class="my-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Our courses</h2>
+          <div class="sectionesag"></div>
+          <div class="row" id="course-list">
+          </div>
+        </div>
+      </section>
+
+    <!--Тут человек может выбрать курсы и после выбора появится уведомление о том как связаться с компанией.-->
+    <section id="personalized-learning">
+        <div class="container">
+          <h2 class="text-center">Personalized Learning Paths</h2>
+          <p class="text-center">Customize your learning journey by selecting courses, projects, and resources that align with your goals.</p>
+          <div class="sectionesag"></div>
+          <div class="row" id="personalized-courses">
+          </div>
+        </div>
+      </section>
+      <audio id="courseAudio" controls style="display: none;">
+        <source id="audioSource" type="audio/mp3">
+        Твой браузер не поддерживает тег audio.
+      </audio>
+    <!--Это отзывы-->
+    <section id="reviews">
+    <div class="koguvcavis-varazdel">
+        <div class="sestim-donials">
+          <h5>Reviews</h5>
+          <div class="sectionesag"></div>
+          <div class="sagestim-lonials">
+            <div class="vemotau-vokusipol">
+              <div class="testimonial">
+                <img src="images/testimonials-4.jpg" alt="">
+                <div class="gecedanam">Cristiano Lisandro</div>
+                <div class="apogered-gselected">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>"I completed the Python course at Mavico and can now create powerful programs. The instructors were professionals. Thank you, Mavico!"</p>
+              </div>
+            </div>
+      
+            <div class="vemotau-vokusipol">
+              <div class="testimonial">
+                <img src="images/testimonials-5.jpg" alt="">
+                <div class="gecedanam">Vasiliy Petrov</div>
+                <div class="apogered-gselected">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>"I finished the web development course at Mavico and now confidently create websites, but otherwise i need more practice in future. Thank you, Mavico!"</p>
+              </div>
+            </div>
+      
+            <div class="vemotau-vokusipol">
+              <div class="testimonial">
+                <img src="images/testimonials-1.jpg" alt="">
+                <div class="gecedanam">Kasper Volkov</div>
+                <div class="apogered-gselected">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>"I completed the game development course at Mavico and now create my own games. Professional instructors, thank you, Mavico!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+      
+  <!-- Место для дискуссий -->
+    <section id="discussion">
+        <div class="container">
+            <h2 class="text-center">Discussion Boards</h2>
+            <div class="sectionesag"></div>
+            <form id="discussion-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Topic Title" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Topic</button>
+            </form>
+            <div id="discussion-list"></div>
+        </div>
+    </section>
+    
+  
+  <!--Свяжитесь с нами-->
+  <section id="contact" class="my-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="sectionesag"></div>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message" id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!--Футер-->
+  <footer class="bg-danger text-white text-center py-3">
+    <div class="container">
+      <p4>&copy; 2023 Online-school Mavico</p4>
+    </div>
+  </footer>
+  
+  
+  <!--Это лайв чат. Я добавил его из-за того что в 10 features он имеется, но мы не знали что для этого нужен будет не локальный сервер, а хостинг. Поэтому я добавил его, он выводит лайв чат но не дает возможности подключиться к серверу Tawk-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/654b887df2439e1631ed1b63/1hengqb1r';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="zxc.js"></script>
+</body>
+</html>

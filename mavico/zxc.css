@@ -1,0 +1,740 @@
+/* Стили для мобильных устройств */
+@media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 18px;
+    }
+  
+    .hero h1 {
+      font-size: 24px;
+    }
+  
+    .hero p3 {
+      font-size: 14px;
+    }
+  
+    /* Дополнительные стили для мобильных устройств */
+  }
+  
+  /* Стили для планшетов */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .navbar-brand {
+      font-size: 20px;
+    }
+  
+    .hero h1 {
+      font-size: 28px;
+    }
+  
+    .hero p3 {
+      font-size: 16px;
+    }
+  
+    /* Дополнительные стили для планшетов */
+  }
+  
+  /* Стили для ноутбуков и десктопов */
+  @media (min-width: 769px) {
+    .navbar-brand {
+      font-size: 24px;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .hero p3 {
+      font-size: 18px;
+    }
+  
+    /* Дополнительные стили для ноутбуков и десктопов */
+  }
+  
+  /* Стили для больших десктопов и телевизоров */
+  @media (min-width: 1200px) {
+    .navbar-brand {
+      font-size: 30px;
+    }
+  
+    .hero h1 {
+      font-size: 48px;
+    }
+  
+    .hero p3 {
+      font-size: 20px;
+    }
+  
+    /* Дополнительные стили для больших десктопов и телевизоров */
+  }
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background: url('images/backgrounddd.png') no-repeat center center;
+    background-size: 100%;
+    color: #ffff;
+    text-align: left; 
+    padding: 100px 0;
+    padding-left: 0; 
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #ffff;
+  }
+  h5 {
+    font-weight: bold;
+    color:#000000;
+  }
+  
+  #courses, #contact {
+    padding: 40px 0;
+    text-align: left;
+  }
+  p1 {
+    color:#000000;
+  }
+  p { 
+    color:#000000;
+
+  }
+  p3{
+    color:#ffff;
+  }
+  p4 {
+    color:#ffff;
+  }
+  
+  #contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #000000;
+  }
+  
+
+  .circular-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+#discussion {
+    padding: 40px 0;
+  }
+  
+  #discussion-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+#personalized-courses .card {
+    width: 100%;
+    max-width: 250px; /* Максимальная ширина карточки */
+    height: auto;
+    padding: 20px;
+    background-color: #ffff; /* Исходный цвет карточки */
+    color: #ffff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Анимация изменения цвета */
+  }
+  
+  #personalized-courses .card:hover {
+    background-color: #ff0000; /* Новый цвет при наведении */
+  }
+  
+  /* Добавьте свои стили здесь */
+#audioContainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #myAudio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+  }
+  
+  .playing {
+    color: green; /* Цвет, когда музыка воспроизводится */
+  }
+  
+  .notification {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  
+/* Стили для карточек курсов и эффекта при наведении */
+.course-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .course-card:hover {
+    background-color: #ff0000; /* Новый цвет при наведении */
+  }
+  
+  .card {
+    height: 100%;
+  }
+  
+  /* Стили для круглых изображений в карточках */
+  .circular-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  /* Стили для кнопки и цены внутри .card-body */
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-body button {
+    margin-top: 10px; /* Расстояние между описанием и кнопкой выбора курса */
+  }
+  
+  .card-body p:last-child {
+    margin-top: 10px; /* Расстояние между кнопкой выбора курса и ценой */
+  }
+  
+/* Стили для аккордеона */
+#companyHistoryAccordion .card {
+    display: inline-block;
+    margin-right: 20px; /* Расстояние между секциями */
+    vertical-align: top;
+  }
+  
+  
+  #companyHistoryAccordion .btn-link {
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #fff;
+    border: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  #companyHistoryAccordion .btn-link.active {
+    color: #FF0000; /*  цвет активной секции */
+  }
+  
+  #companyHistoryAccordion .card-body {
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  #companyHistoryAccordion .collapse.show {
+    background-color: #fff;
+  }
+  
+  #companyHistoryAccordion .collapse {
+    background-color: #fff;
+  }
+
+  /* Стили для секции контактов */
+#contact {
+    background-color: #f8f9fa; /* Фоновый цвет */
+    padding: 50px 0;
+}
+
+/* Стили для контейнера формы */
+#contact .container {
+    background-color: #ffff; /* Фоновый цвет контейнера */
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень контейнера */
+}
+
+/* Стили для заголовка */
+#contact h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Цвет текста */
+}
+
+/* Стили для инпутов и текстовой области */
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Граница инпутов */
+    border-radius: 5px;
+}
+
+/* Стили для кнопки отправки */
+#contact button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Цвет кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+#contact button:hover {
+    background-color: #ff0000; /* Цвет кнопки при наведении */
+}
+
+/* Определение стилей для ошибок валидации (если необходимо) */
+.error-message {
+    color: #ff0000; /* Цвет текста ошибки */
+    font-size: 12px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+/* Стили для сообщения об успешной отправке (если необходимо) */
+.success-message {
+    color: #2ecc71; /* Цвет текста успешного сообщения */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Далее стили для discussion board */
+
+#discussion {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#discussion .container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#discussion h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#discussion input,
+#discussion textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#discussion button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#discussion button:hover {
+    background-color: #ff0000;
+}
+
+/* Стиль для подписки на рассылку */
+#mc_embed_signup {
+    background: #f2f2f2;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.indicates-required {
+    color: #FF0000;
+}
+
+.mc-field-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: #FF0000;
+}
+
+.mc-field-group .asterisk {
+    color: #FF0000;
+    margin-right: 5px;
+}
+
+.mc-field-group .helper_text {
+    font-size: 14px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Глобальные стили */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+/* Стиль для отзывов */
+  .koguvcavis-varazdel {
+    padding: 38px 0;
+    background: #ffff;
+    color: #2f2f2f;
+    text-align: center;
+  }
+  .sestim-donials{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .sectionesag {
+    width: 195px;
+    height: 3px;
+    background: #498a2d;
+    margin: 23px auto;
+  }
+  
+  .sagestim-lonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .vemotau-vokusipol{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial {
+    background: #f9f4f4;
+    padding: 28px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .gecedanam{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .apogered-gselected{
+    color: #53b32b;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width:960px) {
+  .vemotau-vokusipol{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .vemotau-vokusipol{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+
+/* Стиль для ивентов */
+  .events .card {
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .events .card-img {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+  }
+  
+  .events .card-img img {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .events .card-body {
+    z-index: 10;
+    background: #fff;
+    border-top: 4px solid #fff;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    transition: 0.3s;
+  }
+  
+  .events .card-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .events .card-title a {
+    color: #37423b;
+    transition: 0.3s;
+  }
+  
+  .events .card-text {
+    color: #5e5e5e;
+  }
+  
+  .events .read-more a {
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+  
+  .events .read-more a:hover {
+    color: #5fcf80;
+  }
+  
+  .events .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .events .card:hover .card-body {
+    border-color: #5fcf80;
+  }
+  
+  .events .card:hover .card-body .card-title a {
+    color: #5fcf80;
+  }
+
+
+
+  /* Пятая страница */
+
+
+  .internship {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+
+  .internship:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .internship img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .internship.fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+
+
+/* test */
+
+
+.blog-page body {
+  color: black; /* Set the text color to black for the entire page */
+}
+
+.blog-page .card-body {
+  color: black; /* Set the text color to black for the card bodies */
+}
+
+  .blog-post {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .blog-post h2 {
+    font-size: 20px;
+  }
+  
+  .blog-post p {
+    font-size: 16px;
+  }
+/* Add a specific class or ID to the body element of your HTML file */
+.blog-page .card-body {
+  height: 100px; /* Set a fixed height for consistent appearance */
+}
+
+.blog-page .card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+}
+
+.blog-page .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+.blog-page .card-img img {
+  height: 450px; /* Set a fixed height for the card images */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+#top-card {
+  order: -1;
+  transform: scale(0.95);
+  height: 85%;
+}
+
+#top-card .card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+#top-card .card-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#top-card .card-title {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  color: white;
+}
+
+#top-card .card-subtitle {
+  position: absolute;
+  bottom: 43%;
+  left: 5%;
+  transform: translateY(50%);
+  font-size: 46px;
+  color: white;
+}
+#top-card:hover .card-subtitle {
+  text-decoration: underline;
+}
+.card:hover {
+  /* Ваши текущие стили при наведении */
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.outline-text {
+  color: #fff;
+  font-size: 2em;
+  background: #463d3d;
+  padding: 10px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
